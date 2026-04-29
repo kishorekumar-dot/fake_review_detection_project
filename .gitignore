@@ -1,1 +1,36 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime logs
+logs/
+*.log
+
+# Generated data outputs
+data/scraped_reviews.csv
+data/pipeline_results.json
+*.tmp
+*.bak
+
+# Streamlit cache
+.streamlit/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
