@@ -134,19 +134,12 @@ def main() -> None:
         reviewer_scores = analyze_reviewer_states(featured)
 
     with st.spinner("Applying hybrid fraud classification..."):
+        from ga_engine.parallel_genetic_optimizer import weighted_probability
+        
         result = featured.copy()
-        result["ga_score"] = 0.0  # will be recomputed inside classify_reviews pipeline below
+        result["ga_score"] = weighted_probability(result, best_weights)
         result = result.merge(reviewer_scores, on="reviewerID", how="left")
         result = classify_reviews(result)
-
-    # Merge the final GA score separately using the optimized weights.
-    # The classifier above expects ga_score to exist, so we recompute it cleanly here.
-    from ga_engine.parallel_genetic_optimizer import weighted_probability
-
-    result["ga_score"] = weighted_probability(result, best_weights)
-    result = result.drop(columns=[c for c in ["label"] if c in result.columns])
-    result = classify_reviews(result)
-
     # -----------------------------
     # Dashboard
     # -----------------------------
