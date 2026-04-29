@@ -1,0 +1,3 @@
+2026-04-29 19:30:35 | preprocessing             | INFO     | TextPreprocessor initialized
+2026-04-29 19:30:35 | preprocessing             | INFO     | Processing 1000 reviews...
+2026-04-29 19:30:38 | preprocessing             | INFO     | Preprocessing complete. Added 12 new columns.

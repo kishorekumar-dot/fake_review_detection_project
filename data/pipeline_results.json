@@ -1,0 +1,25 @@
+{
+  "dataset_size": 1000,
+  "total_features": 215,
+  "selected_features": 94,
+  "ga_best_fitness": 1.0,
+  "classification_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc_roc": 1.0,
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0
+  },
+  "confusion_matrix": [
+    [
+      140,
+      0
+    ],
+    [
+      0,
+      60
+    ]
+  ]
+}
