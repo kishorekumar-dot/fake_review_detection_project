@@ -9,6 +9,17 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
+FEATURE_COLUMNS = [
+    "sentiment",
+    "text_length",
+    "exclamation_count",
+    "capital_ratio",
+    "rating_extremity",
+    "generic_phrase_score",
+    "burst_score",
+    "repetition_score",
+    "rating_variance_reviewer",
+]
 
 PROMOTIONAL_PHRASES = [
     "good product",
