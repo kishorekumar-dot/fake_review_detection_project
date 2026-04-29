@@ -1,3 +1,0 @@
-2026-04-29 19:30:38 | hmm_engine                | INFO     | HMM Analyzer initialized | states=3 | iter=100
-2026-04-29 19:30:43 | hmm_engine                | INFO     | HMM fitted | Converged: True | Score: -2736.2639
-2026-04-29 19:30:44 | hmm_engine                | INFO     | Extracted 7 HMM features for 1000 reviews

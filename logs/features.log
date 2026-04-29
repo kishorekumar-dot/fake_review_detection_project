@@ -1,3 +1,0 @@
-2026-04-29 19:30:38 | features                  | INFO     | FeatureExtractor initialized | tfidf_features=300
-2026-04-29 19:30:38 | features                  | INFO     | TF-IDF shape: (1000, 188)
-2026-04-29 19:30:38 | features                  | INFO     | Feature matrix shape: (1000, 208) (188 TF-IDF + 20 numeric)
